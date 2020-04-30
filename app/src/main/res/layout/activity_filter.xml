@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    tools:context="com.example.aso.FilterActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+       android:gravity="center"
+        android:layout_height="wrap_content"
+        >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/province_spinner_layout"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:paddingLeft="15dp"
+            android:text="Select Province"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            />
+        <Spinner
+            android:id="@+id/province_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:prompt="@string/spinner_title"/>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/city_spinner_layout"
+            android:layout_below="@+id/province_spinner_layout"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:paddingLeft="15dp"
+                android:text="Select City"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                />
+            <Spinner
+                android:id="@+id/city_spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:prompt="@string/spinner_title"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/street_spinner_layout"
+            android:orientation="horizontal"
+            android:layout_below="@+id/city_spinner_layout"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:paddingLeft="15dp"
+                android:text="Select Street"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                />
+            <Spinner
+                android:id="@+id/street_spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:prompt="@string/spinner_title"/>
+        </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/select_price_range_tv"
+        android:layout_below="@id/street_spinner_layout"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:text="---------- Set Price Range ----------"
+        android:layout_height="wrap_content"
+/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/select_price_range_tv"
+            android:layout_height="wrap_content"
+            android:id="@+id/min"
+            android:gravity="center_horizontal"
+            android:text="Min"
+            />
+
+        <com.libizo.CustomEditText
+            android:id="@+id/min_price_et"
+            android:layout_below="@id/min"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Min Price"
+            android:inputType="number"
+            app:libIZO_clearIconTint="#8f1f15"
+            app:libIZO_setBorderColor="#B3AEAE"
+            app:libIZO_setBorderView="true"
+            app:libIZO_setClearIconVisible="true"
+            app:libIZO_setCornerRadius="50dp"
+            app:libIZO_setStrokeWidth="2dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/to"
+            android:layout_below="@id/min_price_et"
+            android:layout_height="wrap_content"
+            android:text="To"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/black"
+            android:gravity="center_horizontal"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+android:layout_below="@+id/to"
+            android:id="@+id/max"
+            android:layout_height="wrap_content"
+            android:text="Max"
+            android:layout_marginTop="26dp"
+            android:gravity="center_horizontal"
+            />
+
+        <com.libizo.CustomEditText
+            android:id="@+id/max_price_et"
+            android:layout_below="@id/max"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Max Price"
+            android:inputType="number"
+            app:libIZO_clearIconTint="#8f1f15"
+            app:libIZO_setBorderColor="#B3AEAE"
+            app:libIZO_setBorderView="true"
+            app:libIZO_setClearIconVisible="true"
+            app:libIZO_setCornerRadius="50dp"
+            app:libIZO_setStrokeWidth="2dp"/>
+
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/apply_filter"
+            android:layout_below="@id/max_price_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:paddingBottom="16dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="16dp"
+            fancy:fb_borderColor="#FFFFFF"
+            fancy:fb_borderWidth="1dp"
+            fancy:fb_defaultColor="#7ab800"
+            fancy:fb_focusColor="#9bd823"
+            fancy:fb_radius="30dp"
+            fancy:fb_text="Apply Filter."
+            fancy:fb_textColor="#FFFFFF" />
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "530184396626",
+    "firebase_url": "https://discover-pakistan-fa761.firebaseio.com",
+    "project_id": "discover-pakistan-fa761",
+    "storage_bucket": "discover-pakistan-fa761.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:530184396626:android:bcf442a462df8da802648b",
+        "android_client_info": {
+          "package_name": "com.digital.sabzimandi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "530184396626-pc919bvarudoc8u73d4o531jsdsupc2d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.digital.sabzimandi",
+            "certificate_hash": "1c98e74719bd4ed60d12b3d9c2a0b2218c710dbf"
+          }
+        },
+        {
+          "client_id": "530184396626-nvbh65f48gl3btk0inqerl157brlse9v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHlECwsJRM9w-M2sYRwMInRMPKts3XYJ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "530184396626-nvbh65f48gl3btk0inqerl157brlse9v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:530184396626:android:a494477008db915c",
+        "android_client_info": {
+          "package_name": "com.farry.DiscoverPakistan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "530184396626-qcsvknsl9nr2mi0nqgaotf0nr378oit0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.farry.DiscoverPakistan",
+            "certificate_hash": "899f8e27113a2316a965f25a38452434826d4ce1"
+          }
+        },
+        {
+          "client_id": "530184396626-nvbh65f48gl3btk0inqerl157brlse9v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHlECwsJRM9w-M2sYRwMInRMPKts3XYJ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "530184396626-nvbh65f48gl3btk0inqerl157brlse9v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

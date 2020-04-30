@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:background="@color/bg"
+android:layout_height="match_parent"
+tools:context=".SelectionActivity">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Pick Your Interest"
+        android:layout_marginTop="7dp"
+        android:id="@+id/text"
+        android:padding="15dp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/text"
+        android:id="@+id/layout_vegetables"
+        android:layout_height="wrap_content"
+        >
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/loading"
+            android:id="@+id/vegetables"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="10dp"
+            android:textStyle="bold"
+            android:paddingBottom="10dp"
+            android:layout_centerVertical="true"
+            android:background="#40000000"
+            android:gravity="center"
+            android:textColor="@color/bg"
+            android:text="VEGETABLES" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/layout_vegetables"
+        android:layout_width="match_parent"
+        android:id="@+id/layout_fruit"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/loading"
+            android:id="@+id/fruit"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_centerVertical="true"
+            android:background="#40000000"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/bg"
+            android:text="FRUIT" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/layout_fruit"
+        android:id="@+id/layout_grains"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="200dp"
+            android:src="@drawable/loading"
+            android:scaleType="fitXY"
+            android:id="@+id/grains"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_centerVertical="true"
+            android:background="#40000000"
+            android:gravity="center"
+            android:textColor="@color/bg"
+            android:text="GRAINS" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/layout_grains"
+        android:id="@+id/layout_poltry"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="200dp"
+            android:src="@drawable/loading"
+            android:scaleType="fitXY"
+            android:id="@+id/poltry"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_centerVertical="true"
+            android:background="#40000000"
+            android:gravity="center"
+            android:textColor="@color/bg"
+            android:textStyle="bold"
+            android:text="POULTRY" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/layout_poltry"
+        android:id="@+id/layout_dairy"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="200dp"
+            android:src="@drawable/loading"
+            android:scaleType="fitXY"
+            android:id="@+id/dairy"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_centerVertical="true"
+            android:background="#40000000"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/bg"
+            android:text="DAIRY" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/layout_dairy"
+        android:id="@+id/layout_animals"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="200dp"
+            android:src="@drawable/loading"
+            android:scaleType="fitXY"
+            android:id="@+id/animal"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_centerVertical="true"
+            android:background="#40000000"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/bg"
+            android:text="ANIMALS" />
+    </RelativeLayout>
+</RelativeLayout>
+</ScrollView>

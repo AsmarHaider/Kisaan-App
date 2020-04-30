@@ -1,0 +1,35 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+     android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    >
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/add_this_location_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        fancy:fb_borderColor="#FFFFFF"
+        fancy:fb_borderWidth="1dp"
+        fancy:fb_defaultColor="#7ab800"
+        fancy:fb_focusColor="#9bd823"
+        fancy:fb_radius="30dp"
+        fancy:fb_text="Add This Location."
+        fancy:fb_textColor="#FFFFFF" />
+<fragment
+    android:id="@+id/map"
+    android:layout_marginTop="8dp"
+    android:layout_below="@id/add_this_location_button"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aso.FarmLocationActivity" />
+
+</RelativeLayout>

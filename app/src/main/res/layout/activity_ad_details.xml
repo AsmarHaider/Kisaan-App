@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".AdDetails">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/user_layout"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_picture"
+                android:layout_width="76dp"
+                android:layout_weight="0.1"
+                android:layout_marginLeft="5dp"
+                android:layout_height="76dp"
+                app:srcCompat="@drawable/profile_picture"
+                app:civ_border_width="0dp"
+                app:civ_border_color="#FF000000"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/user_name"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Name"
+                />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/user_phone"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="Phone"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/image_title_ads"
+            android:layout_below="@id/user_layout"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@android:color/transparent"
+            android:text="Title" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/Image_Ads"
+            android:layout_below="@id/image_title_ads"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/loading"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            />
+
+
+
+        <LinearLayout
+            android:id="@+id/price_layout"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/Image_Ads"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Date and Time"
+                android:layout_weight="1"
+                android:id="@+id/time_TV"
+                android:layout_marginLeft="15dp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:textAlignment="textEnd"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Price"
+                android:id="@+id/ad_price_tv"
+                android:layout_gravity="end"
+                android:layout_marginEnd="10dp" />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/ad_details_tv"
+            android:layout_below="@id/price_layout"
+            android:text="Details"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="15dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/ad_details_tv"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/send_sms"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Send SMS"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/make_call"
+                android:layout_weight="1"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Dial Number"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ad_details_tv"
+            android:id="@+id/browse_user_ads"
+            android:text="Browse User Ads"
+            android:gravity="end"
+            />
+
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

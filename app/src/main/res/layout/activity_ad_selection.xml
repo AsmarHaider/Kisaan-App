@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    tools:context=".AdSelectionActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@android:color/white"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:text="What Do you want to Sell?"
+            android:layout_marginTop="7dp"
+            android:id="@+id/text"
+            android:padding="15dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/layout_01"
+            android:layout_marginTop="40dp"
+            android:layout_below="@id/text"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="150dp">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="40dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                android:layout_height="wrap_content">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:id="@+id/layout_vegetables"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/loading"
+                        android:id="@+id/vegetables"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="10dp"
+                        android:textStyle="bold"
+                        android:paddingBottom="10dp"
+                        android:layout_centerVertical="true"
+                        android:background="#40000000"
+                        android:gravity="center"
+                        android:textColor="@color/bg"
+                        android:text="VEGETABLES" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="40dp"
+                app:cardElevation="10dp"
+                app:cardCornerRadius="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp">
+
+                <RelativeLayout
+                    android:layout_below="@id/layout_vegetables"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:id="@+id/layout_fruit"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/loading"
+                        android:id="@+id/fruit"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:layout_centerVertical="true"
+                        android:background="#40000000"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/bg"
+                        android:text="FRUIT" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="24dp"
+            android:id="@+id/layout_02"
+            android:layout_below="@+id/layout_01"
+            android:orientation="horizontal"
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                app:cardElevation="10dp"
+                android:layout_marginRight="40dp"
+                app:cardCornerRadius="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="40dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/layout_grains"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/loading"
+                        android:scaleType="fitXY"
+                        android:id="@+id/grains"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:layout_centerVertical="true"
+                        android:background="#40000000"
+                        android:gravity="center"
+                        android:textColor="@color/bg"
+                        android:text="GRAINS" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                app:cardElevation="10dp"
+                android:layout_marginLeft="40dp"
+                app:cardCornerRadius="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/layout_poltry"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/loading"
+                        android:scaleType="fitXY"
+                        android:id="@+id/poltry"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:layout_centerVertical="true"
+                        android:background="#40000000"
+                        android:gravity="center"
+                        android:textColor="@color/bg"
+                        android:textStyle="bold"
+                        android:text="POULTRY" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/layout_03"
+            android:layout_marginTop="24dp"
+            android:layout_below="@+id/layout_02"
+            android:orientation="horizontal"
+            >
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                app:cardElevation="10dp"
+                android:layout_marginRight="40dp"
+                app:cardCornerRadius="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="40dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/layout_poltry"
+                    android:id="@+id/layout_dairy"
+
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/loading"
+                        android:scaleType="fitXY"
+                        android:id="@+id/dairy"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:layout_centerVertical="true"
+                        android:background="#40000000"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/bg"
+                        android:text="DAIRY" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                app:cardElevation="10dp"
+                android:layout_marginLeft="40dp"
+                app:cardCornerRadius="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:id="@+id/layout_animals"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/loading"
+                        android:scaleType="fitXY"
+                        android:id="@+id/animal"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:layout_centerVertical="true"
+                        android:background="#40000000"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/bg"
+                        android:text="ANIMALS" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
+
+

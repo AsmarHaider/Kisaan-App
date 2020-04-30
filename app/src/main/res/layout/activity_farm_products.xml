@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    tools:context=".FarmProductsActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/text_01"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/black"
+        android:layout_height="wrap_content"
+        android:text="Do You Produce Vegetables?"
+        />
+  <RadioGroup
+      android:id="@+id/radio_group_vegetable"
+      android:layout_below="@+id/text_01"
+      android:layout_marginTop="8dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+      <RadioButton
+          android:id="@+id/radio_vegetable_yes"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:checked="true"
+          android:textColor="@color/yes"
+          android:text="Yes"
+          />
+      <RadioButton
+          android:id="@+id/radio_vegetable_no"
+          android:layout_width="match_parent"
+          android:textColor="@color/no"
+          android:layout_height="wrap_content"
+          android:text="No"/>
+  </RadioGroup>
+    <LinearLayout
+        android:id="@+id/layout_vegetables_products"
+        android:layout_below="@+id/radio_group_vegetable"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:id="@+id/onion_cb"
+            android:text="Onion"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:id="@+id/turnip_cb"
+            android:text="Turnip"
+            android:layout_height="wrap_content" />
+        <CheckBox
+            android:layout_width="match_parent"
+            android:id="@+id/garlic_cb"
+            android:text="Garlic"
+            android:layout_height="wrap_content" />
+        <CheckBox
+            android:layout_width="match_parent"
+            android:text="Tomato"
+            android:id="@+id/tomato_cb"
+            android:layout_height="wrap_content" />
+        <CheckBox
+            android:layout_width="match_parent"
+            android:text="Potato"
+            android:id="@+id/potato_cb"
+            android:layout_height="wrap_content" />
+        <CheckBox
+            android:layout_width="match_parent"
+            android:text="Avacado"
+            android:id="@+id/avacado_cb"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/text_02"
+        android:layout_below="@id/layout_vegetables_products"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:text="Do You Produce Fruits?"
+        />
+    <RadioGroup
+        android:id="@+id/radio_group_fruit"
+        android:layout_below="@+id/text_02"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/radio_fruit_yes"
+            android:layout_width="match_parent"
+            android:textColor="@color/yes"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            />
+        <RadioButton
+            android:id="@+id/radio_fruit_no"
+            android:layout_width="match_parent"
+            android:textColor="@color/no"
+            android:checked="true"
+            android:layout_height="wrap_content"
+            android:text="No"/>
+    </RadioGroup>
+    <LinearLayout
+        android:id="@+id/layout_fruit_products"
+        android:layout_below="@+id/radio_group_fruit"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:id="@+id/mango_cb"
+            android:text="Mango"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:id="@+id/orange_cb"
+            android:text="Orange"
+            android:layout_height="wrap_content" />
+        <CheckBox
+            android:layout_width="match_parent"
+            android:id="@+id/banana_cb"
+            android:text="Banana"
+            android:layout_height="wrap_content" />
+        <CheckBox
+            android:layout_width="match_parent"
+            android:text="Water Melon"
+            android:id="@+id/water_melon_cb"
+            android:layout_height="wrap_content" />
+        <CheckBox
+            android:layout_width="match_parent"
+            android:id="@+id/grapes_cb"
+            android:text="Grapes"
+            android:layout_height="wrap_content" />
+        <CheckBox
+            android:layout_width="match_parent"
+            android:id="@+id/dates_cb"
+            android:text="Dates"
+            android:layout_height="wrap_content" />
+        <CheckBox
+            android:layout_width="match_parent"
+            android:id="@+id/guava_cb"
+            android:text="Guava"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_03"
+        android:layout_below="@id/layout_fruit_products"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:text="Do You Produce Dairy?"
+        />
+    <RadioGroup
+        android:id="@+id/radio_group_dairy"
+        android:layout_below="@+id/text_03"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/radio_dairy_yes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/yes"
+
+            android:text="Yes"
+            />
+        <RadioButton
+            android:id="@+id/radio_dairy_no"
+            android:textColor="@color/no"
+            android:checked="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No"/>
+    </RadioGroup>
+    <LinearLayout
+        android:id="@+id/layout_dairy_products"
+        android:visibility="invisible"
+        android:layout_below="@+id/radio_group_dairy"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:id="@+id/milk_cb"
+            android:text="Milk"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:text="Cheese"
+            android:id="@+id/cheese_cb"
+            android:layout_height="wrap_content" />
+        <CheckBox
+            android:layout_width="match_parent"
+            android:id="@+id/butter_cb"
+            android:text="Butter"
+            android:layout_height="wrap_content" />
+        <CheckBox
+            android:layout_width="match_parent"
+            android:id="@+id/yougart_cb"
+            android:text="Yougart"
+            android:layout_height="wrap_content" />
+        <CheckBox
+            android:layout_width="match_parent"
+            android:id="@+id/lassi_cb"
+            android:text="Lassi"
+            android:layout_height="wrap_content" />
+        <CheckBox
+            android:layout_width="match_parent"
+            android:text="Ghee"
+            android:id="@+id/ghee_cb"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/text_04"
+        android:layout_below="@id/layout_dairy_products"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:text="Do You Produce Grains?"
+        />
+    <RadioGroup
+        android:id="@+id/radio_group_grains"
+        android:layout_below="@+id/text_04"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/radio_grains_yes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/yes"
+            android:text="Yes"
+            />
+        <RadioButton
+            android:id="@+id/radio_grains_no"
+            android:layout_width="match_parent"
+            android:textColor="@color/no"
+            android:checked="true"
+            android:layout_height="wrap_content"
+            android:text="No"/>
+    </RadioGroup>
+    <LinearLayout
+        android:id="@+id/layout_grains_products"
+        android:layout_below="@+id/radio_group_grains"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:text="Rice"
+            android:id="@+id/rice_cb"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:text="Wheat"
+            android:id="@+id/wheat_cb"
+            android:layout_height="wrap_content" />
+        <CheckBox
+            android:layout_width="match_parent"
+            android:text="Maze"
+            android:id="@+id/maze_cb"
+            android:layout_height="wrap_content" />
+        <CheckBox
+            android:layout_width="match_parent"
+            android:text="Lobya"
+            android:id="@+id/lobya_cb"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/text_05"
+        android:layout_below="@id/layout_fruit_products"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:text="Do You Produce Poultry?"
+        />
+    <RadioGroup
+        android:id="@+id/radio_group_poultry"
+        android:layout_below="@+id/text_03"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/radio_poultry_yes"
+            android:layout_width="match_parent"
+            android:textColor="@color/yes"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            />
+        <RadioButton
+            android:id="@+id/radio_poultry_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textColor="@color/no"
+            android:text="No"/>
+    </RadioGroup>
+    <LinearLayout
+        android:id="@+id/layout_poultry_products"
+        android:layout_below="@+id/radio_group_dairy"
+        android:layout_marginTop="16dp"
+        android:visibility="invisible"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:id="@+id/egg_cb"
+            android:text="Egg"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:text="Chicken"
+            android:id="@+id/chicken_cb"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/text_06"
+        android:layout_below="@id/layout_poultry_products"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:text="Do You Produce Livestock?"
+        />
+
+    <RadioGroup
+        android:id="@+id/radio_group_animal"
+        android:layout_below="@+id/text_03"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/radio_animal_yes"
+            android:textColor="@color/yes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            />
+
+        <RadioButton
+            android:id="@+id/radio_animal_no"
+            android:layout_width="match_parent"
+            android:textColor="@color/no"
+            android:checked="true"
+            android:layout_height="wrap_content"
+            android:text="No"/>
+    </RadioGroup>
+    <LinearLayout
+        android:id="@+id/layout_animal_products"
+        android:layout_below="@+id/radio_group_dairy"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:text="Goat"
+            android:id="@+id/goat_cb"
+            android:layout_height="wrap_content" />
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:text="Cow"
+            android:id="@+id/cow_cb"
+            android:layout_height="wrap_content" />
+        <CheckBox
+            android:layout_width="match_parent"
+            android:text="Buffalo"
+            android:id="@+id/buffalo_cb"
+            android:layout_height="wrap_content" />
+        <CheckBox
+            android:layout_width="match_parent"
+            android:text="Camle"
+            android:id="@+id/camle_cb"
+            android:layout_height="wrap_content" />
+        <CheckBox
+            android:layout_width="match_parent"
+            android:text="Sheep"
+            android:id="@+id/sheep_cb"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/done_button"
+        android:layout_below="@id/layout_animal_products"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp"
+        fancy:fb_borderColor="#FFFFFF"
+        fancy:fb_borderWidth="1dp"
+        fancy:fb_defaultColor="#7ab800"
+        fancy:fb_focusColor="#9bd823"
+        fancy:fb_radius="30dp"
+        fancy:fb_text="Done."
+        fancy:fb_textColor="#FFFFFF" />
+</RelativeLayout>
+
+</ScrollView>

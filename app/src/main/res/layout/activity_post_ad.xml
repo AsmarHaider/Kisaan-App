@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostAdActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/add_picture"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/add_image" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_picture"
+            android:id="@+id/ad_title"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:hint="Ad's Title"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ad_title"
+            android:inputType="number"
+            android:paddingLeft="15dp"
+            android:id="@+id/ad_price"
+            android:layout_marginTop="10dp"
+            android:hint="Ad's Price"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ad_details"
+            android:paddingLeft="15dp"
+            android:hint="Ad's Details .."
+            android:layout_below="@id/ad_price"
+            />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:id="@+id/First_spinner_layout"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    android:layout_below="@id/ad_details"
+    android:layout_height="wrap_content">
+
+<TextView
+    android:layout_width="match_parent"
+    android:paddingLeft="15dp"
+    android:text="Select Category"
+    android:layout_weight="1"
+    android:layout_height="wrap_content"
+    />
+        <Spinner
+            android:id="@+id/first_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ad_price"
+            android:layout_weight="1"
+            android:prompt="@string/spinner_title"/>
+</LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="28dp"
+            android:layout_height="wrap_content"
+            android:text="Please Provide Address"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/First_spinner_layout"
+            android:id="@+id/address_text"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_location"
+            android:paddingLeft="15dp"
+            android:hint="Street Or Area"
+            android:layout_below="@id/address_text"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_city"
+            android:paddingLeft="15dp"
+            android:hint="City"
+            android:layout_below="@id/user_location"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_province"
+            android:hint="Province"
+            android:paddingLeft="15dp"
+            android:layout_below="@id/user_city"
+            />
+
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/post_ad_button"
+            android:layout_below="@id/user_province"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="12dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="12dp"
+            fancy:fb_borderColor="#FFFFFF"
+            fancy:fb_borderWidth="1dp"
+            fancy:fb_defaultColor="#7ab800"
+            fancy:fb_focusColor="#9bd823"
+            fancy:fb_radius="30dp"
+            fancy:fb_text="Post."
+            fancy:fb_textColor="#FFFFFF" />
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>
